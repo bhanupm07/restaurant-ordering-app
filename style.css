@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Smythe&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* padding: 3rem; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Smythe", cursive;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* HEADER */
+
+.header img {
+  width: 100%;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+}
+
+/* ITEMS LIST STYLING */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 10rem;
+  gap: 10rem;
+}
+
+.items {
+  margin-bottom: 1rem;
+}
+
+.order-text {
+  display: inline-block;
+  margin-top: 4rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  margin: 3rem 0rem;
+}
+
+.item-data {
+  display: flex;
+  align-items: center;
+}
+
+.item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.item-icon {
+  font-size: 10rem;
+}
+
+.item-text span {
+  font-size: 4rem;
+}
+
+.item-text p {
+  font-size: 2rem;
+  color: #8b8b8b;
+}
+
+.item-text .price {
+  font-size: 2rem;
+}
+
+.add-btn {
+  border: 0.2rem solid #dedede;
+  background-color: transparent;
+  font-size: 4rem;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  cursor: pointer;
+}
+
+hr {
+  color: #d2d2d2;
+}
+
+/* PRE CHECKOUT MODAL */
+
+.pre-checkout {
+  width: 100%;
+  text-align: center;
+}
+
+.pre-checkout span {
+  font-size: 4rem;
+}
+
+.added-items {
+  margin: 5rem 0 1.5rem 0;
+}
+
+.added-item,
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.food-name-remove {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.food-name-remove p {
+  font-size: 2rem;
+  color: #bbbbbb;
+  cursor: pointer;
+}
+
+.pre-checkout hr {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  background-color: #16db99;
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 2rem;
+  margin: 4rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 0.3rem;
+}
+
+/* ======= POPUP (CARD DETAILS) ======= */
+
+.popup {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 13rem;
+  background-color: white;
+  text-align: center;
+  padding: 1.7rem;
+  width: 35rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 12rem 2rem black;
+  display: none;
+}
+
+.popup h2 {
+  margin: 1rem 0 2rem 0;
+  font-size: 3rem;
+}
+
+input {
+  margin: 1rem 0rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.pay-btn {
+  margin-bottom: 0;
+}
+
+/* ====== THANKS OUTPUT ====== */
+
+.thanks {
+  display: none;
+  background: #ecfdf5;
+  color: #065f46;
+  font-size: 4.5rem;
+  border-radius: 0.6rem;
+  width: 100%;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem 0 0rem 0;
+}
+
+/* ====== HOVER PROPERTIES ====== */
+
+.add-btn:hover {
+  background-color: #16db99;
+  color: white;
+}
+
+/* ====== MEDIA QUERY FOR RESPONSIVENESS ====== */
+
+@media all and (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0rem 5rem;
+  }
+}
+
+@media all and (max-width: 570px) {
+  .item-icon {
+    font-size: 6rem;
+  }
+
+  .item-text span {
+    font-size: 2.5rem;
+  }
+
+  .item-text p {
+    font-size: 1.5rem;
+  }
+
+  .item-text .price {
+    font-size: 1.5rem;
+  }
+
+  .add-btn {
+    font-size: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+}

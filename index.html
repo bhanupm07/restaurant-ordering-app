@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sukh's Restaurant Ordering App</title>
+  </head>
+  <body>
+    <div class="header">
+      <img src="./images/header_img.png" alt="" />
+    </div>
+    <div class="main">
+      <div class="items"></div>
+      <div class="pre-checkout"></div>
+      <div class="thanks"></div>
+    </div>
+    <div class="popup">
+      <h2>Enter card details</h2>
+      <form class="form">
+        <input
+          type="text"
+          name="name"
+          aria-label="Full name"
+          placeholder="Enter your name"
+          class="name"
+          required
+        />
+        <input
+          type="number"
+          name="card number"
+          aria-label="Card number"
+          placeholder="Enter Card number"
+          class="card-number"
+          required
+        />
+        <input
+          type="number"
+          name="cvv"
+          aria-label="CVV"
+          placeholder="Enter CVV"
+          class="password"
+          required
+        />
+        <button class="btn pay-btn">Pay</button>
+      </form>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
